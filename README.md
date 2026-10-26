@@ -22,13 +22,13 @@ Discover movies, explore their details, find similar titles, apply filters, and 
 
 ## 📸 Screenshots
 
-### Home Page
+### 🏠 Home Page
 ![CineMatch Home Page](Screenshots/home.png)
 
-### Movie Details and Recommendations
+### 🎬 Movie Details and Recommendations
 ![Movie Details](Screenshots/movie-details.png)
 
-### Personal Watchlist
+### ❤️ Personal Watchlist
 ![CineMatch Watchlist](Screenshots/watchlist.png)
 
 ## 🛠️ Technology
