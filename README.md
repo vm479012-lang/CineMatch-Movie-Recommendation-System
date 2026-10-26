@@ -1,86 +1,29 @@
 # 🎬 CineMatch — Movie Recommendation System
 
-**Live Demo:** [🎬 Try CineMatch Movie Recommendation System](https://cine-match-movie-recommendation-sys-eight.vercel.app/)
+**🚀 Live Demo:** [Try CineMatch Movie Recommendation System](https://cine-match-movie-recommendation-sys-eight.vercel.app/)
 
-CineMatch is a movie-discovery web application backed by a content-based movie recommendation system that helps users discover movies using similarity scores, movie details, filters, and a personal watchlist. It combines exported movie metadata and precomputed recommendations with a responsive React + Vite interface.
+**💻 GitHub Repository:** [CineMatch on GitHub](https://github.com/vm479012-lang/CineMatch-Movie-Recommendation-System)
 
-## Features
+CineMatch is a movie-discovery web application powered by a content-based movie recommendation system. It combines exported movie metadata and precomputed recommendations with a responsive React and Vite interface.
 
-- Search with title autocomplete.
-- Movie detail view with poster, release year, rating, overview and genres.
-- Content-based recommendations loaded from `recommendations.json`.
-- Similarity score display with a note explaining that a score is not a probability of enjoyment.
-- Genre, release-year and minimum-rating filters.
-- Sort by rating, release year, title, or popularity when the field is present.
-- Browser-local watchlist stored in `localStorage`.
-- Recommendation explanations based on shared genres where available.
-- Offline evaluation script for catalog coverage, valid recommendation rate, self-matches, duplicates, and a clearly labelled genre-overlap proxy.
+Discover movies, explore their details, find similar titles, apply filters, and manage your personal watchlist.
 
-## Technology
+## ✨ Features
 
-- Python, pandas, scikit-learn (for the model/notebook workflow)
-- TF-IDF vectorization and cosine similarity
-- React, Vite, JavaScript and CSS
-- JSON exports for static frontend delivery
+- 🔎 Movie search with title autocomplete
+- 🎞️ Movie details, posters, release year, rating, overview, and genres
+- 🎯 Content-based recommendations loaded from `recommendations.json`
+- 📊 Similarity scores with an explanation that they are not probabilities of enjoyment
+- 🧩 Genre, release-year, and minimum-rating filters
+- ↕️ Sorting by rating, release year, title, or popularity when available
+- ❤️ Browser-local watchlist with add, remove, and clear options
+- 💡 Recommendation explanations based on shared genres where available
+- 📱 Responsive user interface
 
-## Project structure
+## 🛠️ Technology
 
-```text
-Movie_Recommendation_System/
-├── data/                         # Original source datasets (check licensing before publishing)
-├── frontend/
-│   ├── public/
-│   │   ├── movies.json
-│   │   └── recommendations.json
-│   └── src/
-│       ├── App.jsx
-│       ├── App.css
-│       └── ...
-├── web_data/
-│   ├── movies.json
-│   └── recommendations.json
-├── movie_recommendation.ipynb
-├── evaluate_recommendations.py
-├── requirements.txt
-└── README.md
-```
-
-## Run the website locally
-
-Requirements: a recent Node.js LTS release and npm.
-
-```powershell
-cd frontend
-npm install
-npm run dev
-```
-
-Open the local URL printed by Vite, commonly `http://localhost:5173/`.
-
-The frontend reads `/movies.json` and `/recommendations.json` from `frontend/public/`. Keep those files in sync with the exported files in `web_data/` when you regenerate model outputs:
-
-```powershell
-Copy-Item ..\web_data\movies.json .\public\movies.json -Force
-Copy-Item ..\web_data\recommendations.json .\public\recommendations.json -Force
-```
-
-## Run the Python environment and notebook
-
-Create a virtual environment in the repository root and install the listed dependencies:
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-```
-
-Then open `movie_recommendation.ipynb` in VS Code or Jupyter.
-
-## Important notes
-
-- Watchlist items are saved in the current browser only. They do not sync between laptops or browsers.
-- The static frontend uses the precomputed JSON files, so the recommendation UI does not require a live Python server.
-- Do not commit `.env` files, API keys, access tokens, virtual environments, `node_modules`, or build output.
-- Confirm the source dataset's license and redistribution terms before publishing the raw CSV files.
-- TMDB-style poster paths are rendered using the image CDN. Images may be unavailable for some records or in case of network restrictions.
-- The displayed similarity score is a content-feature similarity score, not a calibrated probability that someone will enjoy the recommended movie.
+- **Machine learning:** Python, pandas, scikit-learn
+- **Recommendation methods:** TF-IDF vectorization and cosine similarity
+- **Frontend:** React, Vite, JavaScript, CSS
+- **Data delivery:** JSON exports
+- **Deployment:** Vercel
