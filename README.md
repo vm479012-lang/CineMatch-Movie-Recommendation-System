@@ -1,6 +1,8 @@
-# CineMatch — Movie Recommendation System
+# 🎬 CineMatch — Movie Recommendation System
 
-CineMatch is a movie-discovery web application backed by a content-based recommendation pipeline. It combines exported movie metadata and precomputed recommendations with a responsive React + Vite interface.
+**Live Demo:** https://cine-match-movie-recommendation-sys-eight.vercel.app/
+
+CineMatch is a movie-discovery web application backed by a content-based movie recommendation system that helps users discover movies using similarity scores, movie details, filters, and a personal watchlist. It combines exported movie metadata and precomputed recommendations with a responsive React + Vite interface.
 
 ## Features
 
