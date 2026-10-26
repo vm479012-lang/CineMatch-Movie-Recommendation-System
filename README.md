@@ -20,6 +20,17 @@ Discover movies, explore their details, find similar titles, apply filters, and 
 - 💡 Recommendation explanations based on shared genres where available
 - 📱 Responsive user interface
 
+## 📸 Screenshots
+
+### Home Page
+![CineMatch Home Page](Screenshots/home.png)
+
+### Movie Details and Recommendations
+![Movie Details](Screenshots/movie-details.png)
+
+### Personal Watchlist
+![CineMatch Watchlist](Screenshots/watchlist.png)
+
 ## 🛠️ Technology
 
 - **Machine learning:** Python, pandas, scikit-learn
